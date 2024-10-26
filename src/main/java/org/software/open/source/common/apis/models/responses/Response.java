@@ -1,17 +1,21 @@
 package org.software.open.source.common.apis.models.responses;
 
-import java.time.ZoneId;
 import java.time.ZonedDateTime;
 
+import org.software.open.source.common.utils.Common;
 import org.software.open.source.common.utils.DateTimeUtils;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 
 @Data
+@AllArgsConstructor
+@RequiredArgsConstructor
 public class Response<T> {
 
-    private String timeServer = DateTimeUtils.formatDateTime(ZonedDateTime.now().withZoneSameInstant(ZoneId.of("UTC")), "YYYY/MM/dd HH:mm:ss Z");
+    private String timeServer = DateTimeUtils.formatDateTime(ZonedDateTime.now(), Common.PATTERN_DEFAULT);
 
     private int statusCode;
 
