@@ -40,7 +40,7 @@
 
 	<scm>
 		<connection>scm:git:https://github.com/software-open-source/common.git</connection>
-		<developerConnection>scm:git:git@github.com:example/my-app.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:software-open-source/common.git</developerConnection>
 		<tag>HEAD</tag>
 		<url>https://github.com/software-open-source/common</url>
 	</scm>
@@ -101,6 +101,14 @@
 						</exclude>
 					</excludes>
 				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+						<phase>none</phase>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
