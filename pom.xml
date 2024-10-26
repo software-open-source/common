@@ -6,7 +6,7 @@
 
 	<groupId>org.software.open.source</groupId>
 	<artifactId>common</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	<name>common</name>
 	<description>common</description>
 
